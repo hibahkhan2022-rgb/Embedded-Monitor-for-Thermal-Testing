@@ -9,4 +9,5 @@ This repository shows a governor script that manages hardware constraints and pr
      * Sense: Hardware reads temperature
      * Think: Did the hardware hit 70ºC?
      * Act: Switch modes by triggering `nvpmodel`
+
 Also, the the main governor script is pinned down to Core 0. This means that even when other processes are running, the safety logic does not lag. 
