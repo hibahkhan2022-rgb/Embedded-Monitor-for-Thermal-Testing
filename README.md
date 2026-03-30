@@ -11,3 +11,7 @@ This repository shows a governor script that manages hardware constraints and pr
      * Act: Switch modes by triggering `nvpmodel`
 
 Also, the the main governor script is pinned down to Core 0. This means that even when other processes are running, the safety logic does not lag. 
+
+## Troubleshooting
+Originally, the code ran into some issues. Running the governor.py script allowed the temperature to increase from 50ºC to ~54ºC celsius, but would quickly stabilize. Initially, the matrix multiplication of the script was increased from (1000,1000) to (4000,4000). While it changed the ceiling by ~2º, the fan was turned off after to reach the 70ºC limit using: 
+`
