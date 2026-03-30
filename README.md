@@ -14,4 +14,4 @@ Also, the the main governor script is pinned down to Core 0. This means that eve
 
 ## Troubleshooting
 Originally, the code ran into some issues. Running the governor.py script allowed the temperature to increase from 50ºC to ~54ºC celsius, but would quickly stabilize. Initially, the matrix multiplication of the script was increased from (1000,1000) to (4000,4000). While it changed the ceiling by ~2º, the fan was turned off after to reach the 70ºC limit using: 
-`sudo sh -c 'echo 0 > /sys/class/hwmon/hwmonX/pwm1'`
+* `sudo sh -c 'echo 0 > /sys/class/hwmon/hwmonX/pwm1'`
