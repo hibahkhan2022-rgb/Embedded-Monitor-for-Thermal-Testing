@@ -16,7 +16,7 @@ The project was divided into 3 main experiments. The first one running entirely 
 
 ## Experiment 1 (Mode 0)
 
-This is what is considered to be high speed, high heat. The fan 
+This is what is considered to be high speed, high heat. The experiment estimates this mode will have the highest thermal velocity due to prioritization of low latency, 
 
 ## Troubleshooting
 Originally, the code ran into some issues. Running the governor.py script allowed the temperature to increase from 50ºC to ~54ºC celsius, but would quickly stabilize. Initially, the matrix multiplication of the script was increased from (1000,1000) to (4000,4000). While it changed the ceiling by ~2º, the fan was turned off after to reach the 70ºC limit using: 
