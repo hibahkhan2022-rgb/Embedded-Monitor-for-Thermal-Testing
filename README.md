@@ -12,7 +12,11 @@ This repository shows a governor script that manages hardware constraints and pr
 
 Also, the the main governor script is pinned down to Core 0. This means that even when other processes are running, the safety logic does not lag. 
 
-The project was divided into 3 main experiments. The first one running entirely on **Mode 0 - MAXN** mode that draws 15W of the Jetson's Power. The second one runs the main governor loop, utilizing full power at **MAXN** mode until hitting 70ºC, then switching to **Mode 2** drawing 7W at the expense of higher latency. The final experimentation runs entirely on **Mode 2** from 70ºC until cooling. All the experiments will start around ~50ºC, test limits beyond 70ºC, and cool until around ~54ºC. Each experiment runs for 16 minutes, 40 seconds.
+The project was divided into 3 main experiments. The first one running entirely on **Mode 0 - MAXN** mode that draws 15W of the Jetson's Power. The second one runs the main governor loop, utilizing full power at **MAXN** mode until hitting 70ºC, then switching to **Mode 2** drawing 7W at the expense of higher latency. The final experimentation runs entirely on **Mode 2** from 70ºC until cooling. All the experiments will start around ~50ºC, test limits beyond 70ºC, and cool until around ~54ºC. Each experiment runs for 16 minutes, 40 seconds. The fan is automatically turned off from the start of the experiment and remains off until around 1-2 minutes after hitting throttling limit at 70ºC. 
+
+## Experiment 1 (Mode 0)
+
+This is what is considered to be high speed, high heat. The fan 
 
 ## Troubleshooting
 Originally, the code ran into some issues. Running the governor.py script allowed the temperature to increase from 50ºC to ~54ºC celsius, but would quickly stabilize. Initially, the matrix multiplication of the script was increased from (1000,1000) to (4000,4000). While it changed the ceiling by ~2º, the fan was turned off after to reach the 70ºC limit using: 
