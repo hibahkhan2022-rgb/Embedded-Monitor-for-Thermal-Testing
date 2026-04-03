@@ -28,12 +28,12 @@ def governor_loop(shared_latency):
             elapsed = time.time() - start_time
 
             if temp > 70.0 and current_mode == 0:
-                print(f"\n[!!!] THERMAL LIMIT REACHED ({temp:.1f}C). Switching to Mode 2.")
+                print(f"\n[!!!] THERMAL LIMIT REACHED ({temp:.1f}C). Switching to Mode (0 or 2).")
                 subprocess.run(['sudo', 'nvpmodel', '-m', '2'], input=b"no\n", capture_output=True)
                 current_mode = 2
                 
             elif temp < 55.0 and current_mode != 0:
-                print(f"\n[---] COOL DOWN SUCCESS ({temp:.1f}C). Restoring MAXN Mode.")
+                print(f"\n[---] COOL DOWN SUCCESS ({temp:.1f}C). Restoring (0 or 2).")
                 subprocess.run(['sudo', 'nvpmodel', '-m', '0'], input=b"no\n", capture_output=True)
                 current_mode = 0
 
