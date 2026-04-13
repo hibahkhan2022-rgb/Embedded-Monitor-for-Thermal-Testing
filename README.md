@@ -21,9 +21,9 @@ This repository demonstrates a software-defined governor script designed to mana
 
 To quantify system behavior and the effectiveness of the governor, the following engineering measurements were analyzed:
 
-* **Thermal Velocity ($^\circ$C/s):** Calculated as $\Delta Temp / \Delta Time$. This measures the "Rate of Change" to prove how much harder the heatsink works in Mode 0 vs Mode 2.
+* **Thermal Velocity:** Calculated as $\Delta Temp / \Delta Time$. This measures the "Rate of Change" to prove how much harder the heatsink works in Mode 0 vs Mode 2.
 * **Energy per Calculation (Joules/Op):** Calculated as $Energy = Power \times Latency$. This identifies which mode is more energy-efficient for completing a specific matrix task.
-* **Thermal Resistance ($\theta_{ca}$):** A critical EE metric measuring heatsink efficiency in a fan-less environment. Calculated as: $R_{\theta} = (Temp_{Peak} - Temp_{Ambient}) / Power_{In}$.
+* **Thermal Resistance ($\theta_{ca}$):** A critical EE metric measuring heatsink efficiency where fan is turned off. Calculated as: $R_{\theta} = (Temp_{Peak} - Temp_{Ambient}) / Power_{In}$.
 * **Throughput (GFLOPS):** Converts latency into raw performance data. For these $4000 \times 4000$ matrices: $FLOPS = (128 \times 10^9) / (Latency / 1000)$.
 
 ---
