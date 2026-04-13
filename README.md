@@ -49,7 +49,10 @@ The project was divided into 3 main experimental cycles. Each experiment starts 
 ---
 ## Results
 
-### Experiment 1:
+### Data Analysis of 3 Experiments (Mode 0, Experiment Governor, Mode 2)
+
+<img width="887" height="712" alt="figure" src="https://github.com/user-attachments/assets/069b7e0c-ac0c-4713-8812-16cf761559d3" />
+
 
 
 
