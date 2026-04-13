@@ -57,12 +57,12 @@ The project was divided into 3 main experimental cycles. Each experiment starts 
 
 | Metric | Mode 0 (MAXN) | Active Governor | Mode 2 (15W) | Analysis |
 | :--- | :--- | :--- | :--- | :--- |
-| **Peak Temp** | 74.12°C | **70.47°C** | 73.84°C | [cite_start]Governor maintained the SoC **~3.6°C cooler** than uncapped Mode 0.  |
-| **Thermal Velocity** | 0.091°C/s | 0.067°C/s | **0.052°C/s** | [cite_start]Switching to Mode 2 reduced heat accumulation speed by **~58%**.  |
-| **Avg. Latency** | **3360 ms** | 3480 ms | 4250 ms | [cite_start]Governor incurred only a **~120 ms** penalty vs. the full 890 ms "Mode 2 Tax".  |
-| **Throughput** | **38.1 GFLOPS** | 36.8 GFLOPS | 30.1 GFLOPS | [cite_start]System maintained **96% of peak compute power** while ensuring thermal safety.  |
-| **Energy / Matrix** | 67.2 J | **61.3 J** | 63.7 J | [cite_start]**Winner:** Governor was most efficient by finishing tasks before heavy throttling.  |
-| **Thermal Resist.** | 1.61°C/W | 1.89°C/W | 2.12°C/W | [cite_start]High values confirm fan-off environment forced heatsink to physical limits.  |
+| **Peak Temp** | 74.12°C | **70.47°C** | 73.84°C | Governor maintained the SoC **~3.6°C cooler** than uncapped Mode 0.  |
+| **Thermal Velocity** | 0.091°C/s | 0.067°C/s | **0.052°C/s** | Switching to Mode 2 reduced heat accumulation speed by **~58%**.  |
+| **Avg. Latency** | **3360 ms** | 3480 ms | 4250 ms | Governor incurred only a **~120 ms** penalty vs. the full 890 ms "Mode 2 Tax".  |
+| **Throughput** | **38.1 GFLOPS** | 36.8 GFLOPS | 30.1 GFLOPS | System maintained **96% of peak compute power** while ensuring thermal safety.  |
+| **Energy / Matrix** | 67.2 J | **61.3 J** | 63.7 J | **Winner:** Governor was most efficient by finishing tasks before heavy throttling.  |
+| **Thermal Resist.** | 1.61°C/W | 1.89°C/W | 2.12°C/W | High values confirm fan-off environment forced heatsink to physical limits.  |
 
 
 
