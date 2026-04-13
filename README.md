@@ -36,7 +36,7 @@ The project was divided into 3 main experimental cycles. Each experiment starts 
 
 ### Experiment 1: Mode 0 (MAXN)
 * **Configuration:** Locked in MAXN mode (unlimited power draw).
-* **Objective:** Establish the "High Speed, High Heat" baseline. This mode prioritizes low latency but exhibits the highest thermal velocity, serving as the "control group" for thermal runaway.
+* **Objective:** Establish the "High Speed, High Heat" baseline. This mode prioritizes low latency but exhibits the highest thermal velocity.
 
 ### Experiment 2: Active Governor
 * **Configuration:** Dynamic switching between Mode 0 and Mode 2.
@@ -47,6 +47,12 @@ The project was divided into 3 main experimental cycles. Each experiment starts 
 * **Objective:** Establish the low-performance baseline. This mode runs from 70°C until the cooling phase, drawing less power but incurring a significant "Latency Tax" (approx. 27% increase in compute time).
 
 ---
+## Results
+
+### Experiment 1:
+
+
+
 
 ## Troubleshooting & Iteration
 
