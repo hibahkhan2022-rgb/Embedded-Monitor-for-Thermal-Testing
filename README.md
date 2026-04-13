@@ -57,7 +57,7 @@ The project was divided into 3 main experimental cycles. Each experiment starts 
 
 | Metric | Mode 0 (MAXN) | Active Governor | Mode 2 (15W) | Analysis |
 | :--- | :--- | :--- | :--- | :--- |
-| **Peak Temp ($T_j$)** | 74.12°C | **70.47°C** | 73.84°C | [cite_start]Governor maintained the SoC **~3.6°C cooler** than uncapped Mode 0.  |
+| **Peak Temp** | 74.12°C | **70.47°C** | 73.84°C | [cite_start]Governor maintained the SoC **~3.6°C cooler** than uncapped Mode 0.  |
 | **Thermal Velocity** | 0.091°C/s | 0.067°C/s | **0.052°C/s** | [cite_start]Switching to Mode 2 reduced heat accumulation speed by **~58%**.  |
 | **Avg. Latency** | **3360 ms** | 3480 ms | 4250 ms | [cite_start]Governor incurred only a **~120 ms** penalty vs. the full 890 ms "Mode 2 Tax".  |
 | **Throughput** | **38.1 GFLOPS** | 36.8 GFLOPS | 30.1 GFLOPS | [cite_start]System maintained **96% of peak compute power** while ensuring thermal safety.  |
