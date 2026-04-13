@@ -55,13 +55,13 @@ The project was divided into 3 main experimental cycles. Each experiment starts 
 
 #### Summary Table
 
-Metric	Mode 0 (MAXN)	Active Governor	Mode 2 (15W)
-Peak Temp (Tj​)	74.12∘C	70.47∘C	73.84∘C
-Thermal Velocity	0.091∘C/s	0.067∘C/s	0.052∘C/s
-Avg. Latency	3360 ms	3480 ms	4250 ms
-Throughput	38.1 GFLOPS	36.8 GFLOPS	30.1 GFLOPS
-Energy / Matrix	67.2 Joules	61.3 Joules	63.7 Joules
-Thermal Resist.	1.61∘C/W	1.89∘C/W	2.12∘C/W
+Metric,Mode 0 (MAXN),Active Governor,Mode 2 (15W),Analysis
+Peak Temp (Tj​),74.12∘C ,70.47∘C ,73.84∘C ,Governor kept the SoC ~3.6∘C cooler than uncapped Mode 0.
+Thermal Velocity,0.091∘C/s ,0.067∘C/s ,0.052∘C/s ,Switching to Mode 2 reduced heat accumulation speed by ~58%.
+Avg. Latency,3360 ms ,3480 ms ,4250 ms ,"The Governor only incurred a ~120 ms average penalty compared to the full 890 ms ""Mode 2 Tax""."
+Throughput,38.1 GFLOPS ,36.8 GFLOPS ,30.1 GFLOPS ,You maintained 96% of peak compute power while ensuring 100% thermal safety.
+Energy / Matrix,67.2 Joules ,61.3 Joules ,63.7 Joules ,Winner: The Governor was the most energy-efficient by finishing quickly before throttling too hard.
+Thermal Resist.,1.61∘C/W ,1.89∘C/W ,2.12∘C/W ,High values confirm the fan-off environment forced the heatsink to its limits.
 
 
 
